@@ -15,7 +15,7 @@
     $updated_account = $salesforce->updateInsuranceInfo($request->getAlphaNumericParameter('accountId'), $insurancePolicy);
 
     include('templates/admin/admin.header.tem.php');
-    
+
     if ($updated_account) {
       $view['pageTitle'] = "Salesforce Account Updated";
       echo "<div class='warningMessage'>Your Account has been updated.</div>";
@@ -27,6 +27,7 @@
 
     include('templates/admin/admin.footer.tem.php');
     exit;
+    
   }
 
 ?>
